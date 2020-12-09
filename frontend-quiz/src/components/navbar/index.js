@@ -14,7 +14,7 @@ function Navbar() {
       </div>
       <ul className={styles.navMenu}>
         <li className={styles.links}>
-          <NavLink to="/start-game">Start Quiz</NavLink>
+          <NavLink to="/start-quiz">Start Quiz</NavLink>
         </li>
         <li className={styles.links}>
           <NavLink to="/high-scores">High Scores</NavLink>
