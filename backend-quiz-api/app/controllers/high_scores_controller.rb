@@ -21,6 +21,6 @@ class HighScoresController < ApplicationController
   end
 
   def high_score_params 
-    params.require(:high_score).permit(:quiz_id)
+    params.require(:high_score).permit(:quiz_id, :high_score)
   end
 end
