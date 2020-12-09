@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import { questionsReducer } from "./questionsReducer";
+import { questionsReducer as questions } from "./questionsReducer";
 export const rootReducer = combineReducers({
-  questionsReducer,
+  questions,
 });
