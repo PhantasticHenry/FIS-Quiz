@@ -1,4 +1,4 @@
 class HighScoreSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :high_score
   has_one :quiz
 end
