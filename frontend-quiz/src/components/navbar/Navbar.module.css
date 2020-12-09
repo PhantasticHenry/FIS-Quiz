@@ -16,7 +16,7 @@
 .navMenu {
   display: flex;
   justify-content: space-between;
-  border: rebeccapurple;
+  padding-right: 1.5rem;
 }
 
 .links {
