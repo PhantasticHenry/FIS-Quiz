@@ -1,5 +1,24 @@
 .container {
+  display: flex;
   background-color: aqua;
   border: pink;
   color: black;
+  justify-content: space-between;
+  text-align: center;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: space-between;
+  border: rebeccapurple;
+}
+
+.links {
+  display: flex;
 }
