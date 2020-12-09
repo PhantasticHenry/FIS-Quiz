@@ -9,6 +9,6 @@ export const getQuestions = () => {
       .then((questions) =>
         dispatch({ type: types.FETCH_QUESTIONS, payload: questions })
       )
-      .catch((error) => console.log("ERROR!!!", error));
+      .catch((error) => console.log("FETCH ERROR!!!", error));
   };
 };
