@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/navbar";
 import PageNotFound from "./features/pageNotFound";
 import StartQuiz from "./features/startQuiz";
+import Questions from "./features/questions";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/start-quiz" component={StartQuiz} />
+          <Route exact path="/questions" component={Questions} />
           <Route component={PageNotFound} />
         </Switch>
       </Router>
