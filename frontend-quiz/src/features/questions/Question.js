@@ -10,13 +10,15 @@ function Question({ question }) {
     <div className={styles.front}>
       {question.question}
       <div className={styles.questionOptions}>
-        {options.map((option) => {
-          return (
-            <div className={styles.questionOption} key={option + Date.now()}>
-              {option}
-            </div>
-          );
-        })}
+        {options
+          .sort(() => Math.random() - 0.5)
+          .map((option) => {
+            return (
+              <div className={styles.questionOption} key={option + Date.now()}>
+                {option}
+              </div>
+            );
+          })}
       </div>
     </div>
   );
