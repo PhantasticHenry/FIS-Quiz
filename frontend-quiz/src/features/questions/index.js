@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getQuestions } from "../../actions/getQuestions";
 import Question from "./Question";
+import styles from "./Questions.module.css";
 
 function Questions() {
   const dispatch = useDispatch();
@@ -15,7 +16,7 @@ function Questions() {
     dispatch(getQuestions());
   }, []);
 
-  return <div>{question}</div>;
+  return <div className={styles.cardGrid}>{question}</div>;
 }
 
 export default Questions;
