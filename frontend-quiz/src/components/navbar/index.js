@@ -1,26 +1,34 @@
 import React from "react";
 import styles from "./Navbar.module.css";
 import { NavLink } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
 import logo from "../../images/logo.png";
 
 function Navbar() {
   return (
-    <nav className={styles.navContainer}>
+    <nav className={styles.nav}>
       <div className={styles.logo}>
         <NavLink to="/">
           {/* fix why logo isn't loading image */}
-          <h1 className={styles.logo}>Logo Here</h1>
+          <img src={logo} alt="logo" className={styles.logo} />
         </NavLink>
       </div>
       <ul className={styles.navMenu}>
+        <FaBars className={styles.bars} />
         <li className={styles.links}>
-          <NavLink to="/start-quiz">Start Quiz</NavLink>
+          <NavLink activeClassName={styles.selected} to="/start-quiz">
+            Start Quiz
+          </NavLink>
         </li>
         <li className={styles.links}>
-          <NavLink to="/high-scores">High Scores</NavLink>
+          <NavLink activeClassName={styles.selected} to="/high-scores">
+            High Scores
+          </NavLink>
         </li>
         <li className={styles.links}>
-          <NavLink to="/questions">All Questions</NavLink>
+          <NavLink activeClassName={styles.selected} to="/questions">
+            All Questions
+          </NavLink>
         </li>
       </ul>
     </nav>
@@ -28,3 +36,5 @@ function Navbar() {
 }
 
 export default Navbar;
+
+//need to test passing props through NavLink when i get back  ****

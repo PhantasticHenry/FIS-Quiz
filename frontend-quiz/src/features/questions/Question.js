@@ -15,7 +15,7 @@ function Question({ question }) {
           .map((option) => {
             return (
               <div className={styles.questionOption} key={option + Date.now()}>
-                {option}
+                {options}
               </div>
             );
           })}

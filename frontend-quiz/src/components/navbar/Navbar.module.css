@@ -1,24 +1,45 @@
-.container {
+.nav {
+  background-color: transparent;
   display: flex;
-  background-color: aqua;
-  border: pink;
-  color: black;
+  height: 80px;
   justify-content: space-between;
-  text-align: center;
+  padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
 }
 
 .logo {
   display: flex;
   justify-content: center;
+  height: 8vh;
 }
 
 .navMenu {
   display: flex;
-  justify-content: space-between;
   padding-right: 1.5rem;
+}
+
+.bars {
+  color: #fff;
 }
 
 .links {
   display: flex;
+}
+
+a {
+  display: flex;
+  color: green;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+.selected {
+  color: purple;
+}
+
+a:hover {
+  color: pink;
 }
