@@ -1,7 +1,7 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Question.create(category: "React Lifecyle & Lifecycle Methods", question: "What is the first phase of a React Lifecyle?", correct_answer: "An instance of the component is created and two methods are called: GetDefaultProps and GetInitialState", incorrect_answers: ["render() & componentDidUpdate", "getSnapshotBeforeUpdate() & ComponentDidMount", "None of the above."])
+Question.create(category: "React Lifecyle & Lifecycle Methods", question: "What are two methods called on the initialization on creation of a component?", correct_answer: "GetDefaultProps & GetInitialState", incorrect_answers: ["componentDidMount & render()", "GetDefaultProps & componentDidMount", "None of the above."])
+Question.create(category: "React Lifecyle & Lifecycle Methods", question: "What happens after the constructor define props and state?", correct_answer: "componentWillMount is called and than the render method is executed.", incorrect_answers: ["componentDidUpdate and than the render method is executed.", "componentWillUnmount and than the render method is executed.", "None of the above."])
+Question.create(category: "React Lifecyle & Lifecycle Methods", question: "What does the render method return on initialization?", correct_answer: "It will return component markup which can be in the form of a single child or null/false.", incorrect_answers: ["componentDidMount", "componentWillUnmount", "None of the above."])
+Question.create(category: "React Lifecyle & Lifecycle Methods", question: "After the first render method, what is called next?", correct_answer: "componentDidMount", incorrect_answers: ["componentDidUpdate", "componentWillUnmount", "None of the above."])
+
+
